@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "319490885468",
+    "firebase_url": "https://babynews2-a2dcb.firebaseio.com",
+    "project_id": "babynews2-a2dcb",
+    "storage_bucket": "babynews2-a2dcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319490885468:android:caf73635d38178564d2399",
+        "android_client_info": {
+          "package_name": "com.example.babynews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319490885468-ci3a8mu26n2lmitg51prk4ses7q2ipht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.babynews",
+            "certificate_hash": "f41a3b11294b248a0a64bb7751289cde669865f9"
+          }
+        },
+        {
+          "client_id": "319490885468-1gd1aikk0h78k7u2bmo2gl1asoc721do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4Bbmwr_qOaV6saj3v3sMpeb_9472uOWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319490885468-1gd1aikk0h78k7u2bmo2gl1asoc721do.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
