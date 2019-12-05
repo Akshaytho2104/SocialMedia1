@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/colorPrimaryDark"
+        android:background="#FF69D5"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <com.mikhaellopez.circularimageview.CircularImageView

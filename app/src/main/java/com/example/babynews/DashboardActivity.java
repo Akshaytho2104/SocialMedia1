@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -34,7 +35,19 @@ public class DashboardActivity extends AppCompatActivity {
         BottomNavigationView navigationView = findViewById(R.id.navigation);
         navigationView.setOnNavigationItemSelectedListener(selectedListener);
 
+
+        actionBar.setTitle("Home");
+        HomeFragment fragment1 = new HomeFragment();
+        FragmentTransaction ft1 = getSupportFragmentManager().beginTransaction();
+        ft1.replace(R.id.content, fragment1, "");
+        ft1.commit();
+
     }
+
+    public void updateToken(String token){
+
+    }
+
     private BottomNavigationView.OnNavigationItemSelectedListener selectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
@@ -67,7 +80,7 @@ public class DashboardActivity extends AppCompatActivity {
 
                         case R.id.nav_chat:
                             actionBar.setTitle("Chats");
-                           ChatListFragment fragment4 = new ChatListFragment();
+                            ChatListFragment fragment4 = new ChatListFragment();
                             FragmentTransaction ft4 = getSupportFragmentManager().beginTransaction();
                             ft4.replace(R.id.content, fragment4, "");
                             ft4.commit();

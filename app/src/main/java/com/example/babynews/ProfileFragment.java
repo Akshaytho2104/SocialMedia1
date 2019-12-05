@@ -342,7 +342,7 @@ public class ProfileFragment extends Fragment {
             case STORAGE_REQUEST_CODE: {
 
                 if (grantResults.length >0){
-                    boolean writeStorageAccepted = grantResults[1] == PackageManager.PERMISSION_GRANTED;
+                    boolean writeStorageAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
                     if (writeStorageAccepted){
                         pickFromGallery();
                     }
@@ -476,6 +476,11 @@ public class ProfileFragment extends Fragment {
         if (id == R.id.action_logout){
             firebaseAuth.signOut();
             checkUserStatus();
+        }
+
+        if (id == R.id.action_add_post){
+
+            startActivity(new Intent(getActivity(), AddPostActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }
